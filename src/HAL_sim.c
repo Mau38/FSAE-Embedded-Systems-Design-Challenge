@@ -1,4 +1,4 @@
-#include "HAL.h"
+#include "../include/HAL.h"
 #include <stdint.h>
 
 void HAL_ReadVoltages(float data[N_CELLS]) {}

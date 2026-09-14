@@ -1,4 +1,4 @@
-#include "HAL.h"
+#include "../include/HAL.h"
 
 #define ISENSE_ID 0x511
 #define DIAGNOSTIC_HEARTBEAT_ID 0x1CD

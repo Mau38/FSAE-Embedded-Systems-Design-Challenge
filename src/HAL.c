@@ -1,4 +1,4 @@
-#include "HAL.h"
+#include "../include/HAL.h"
 #include <stddef.h>
 
 bool ISENSE_GetCurrent(const struct CAN_FRAME *frame, int32_t *out_current) {
