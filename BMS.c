@@ -11,6 +11,7 @@ volatile bool fault_clear_requested;
 
 void Init() {
     // This function runs once on startup
+    HAL_SetSDC(false);
     latched_faults = active_faults = NO_FAULTS;
 }
 
