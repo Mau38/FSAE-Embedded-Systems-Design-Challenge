@@ -49,7 +49,7 @@ bool CELL_VoltageFaultDetection(const float cell_voltages[N_CELLS],
 bool CELL_TemperatureFaultDetection(const float cell_temperatures[N_CELLS],
                                     uint8_t *faults);
 
-void Manage_Fault(uint8_t *faults, uint8_t *latched_faults,
+void Manage_Fault(uint8_t *active_faults, uint8_t *latched_faults,
                   volatile bool *fault_clear_request);
 
 // Reads the voltage data for all the cells in volts

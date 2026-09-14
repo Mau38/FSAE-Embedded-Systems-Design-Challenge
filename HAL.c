@@ -74,14 +74,16 @@ bool CELL_TemperatureFaultDetection(const float cell_temperatures[N_CELLS],
     return true;
 }
 
-void Manage_Fault(uint8_t *faults, uint8_t *latched_faults,
+void Manage_Fault(uint8_t *active_faults, uint8_t *latched_faults,
                   volatile bool *fault_clear_request) {
-    if (*latched_faults != NO_FAULTS) {
-        HAL_SetSDC(false);
-    }
     if (*fault_clear_request) {
         *fault_clear_request = false;
-        *latched_faults = NO_FAULTS;
-        HAL_SetSDC(true);
+        if (*active_faults == NO_FAULTS) {
+            *latched_faults = NO_FAULTS;
+            HAL_SetSDC(true);
+        }
+    }
+    if (*latched_faults != NO_FAULTS) {
+        HAL_SetSDC(false);
     }
 }
