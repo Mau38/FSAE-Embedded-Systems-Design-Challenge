@@ -2,7 +2,7 @@
 
 #define ISENSE_ID 0x511
 #define DIAGNOSTIC_HEARTBEAT_ID 0x1CD
-#define FAULTS_ID 0x300
+#define FAULTS_ID 0x0B1
 #define FAULTS_CLEAR_ID 0x1CF
 
 uint8_t active_faults;
