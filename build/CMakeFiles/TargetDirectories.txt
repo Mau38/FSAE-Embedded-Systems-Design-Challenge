@@ -1,0 +1,3 @@
+/home/Mau/workplace/A&M/FSAE/build/CMakeFiles/deployment.dir
+/home/Mau/workplace/A&M/FSAE/build/CMakeFiles/edit_cache.dir
+/home/Mau/workplace/A&M/FSAE/build/CMakeFiles/rebuild_cache.dir

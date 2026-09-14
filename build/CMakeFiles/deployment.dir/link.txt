@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/deployment.dir/link.d CMakeFiles/deployment.dir/src/BMS.c.o CMakeFiles/deployment.dir/src/HAL.c.o -o deployment
